@@ -39,10 +39,9 @@ export function ClickButton() {
 // Extra assignment's strech task questions:
 
 // Q1. Why do we use React?
-// We use React to build fast and interactive user interfaces for web applications. It helps developers create reusable components, making code easier to maintain. React also uses a Virtual DOM, which updates only the necessary parts of a webpage, improving performance and user experience.
+// Ans:- We use React to build fast and dynamic web apps. It makes UI using reusable components and updates pages quickly with the Virtual DOM.
 
 // Q2. What is Vite? And how is it better than the traditional Create React App (CRA)?
-// Vite is a modern build tool that makes creating React apps faster and smoother than the traditional Create React App (CRA). It provides instant server startup, faster hot reloading, and smaller, optimized builds. In simple terms, Vite is quicker, more efficient, and better suited for modern React development compared to CRA.
-
+// Ans:- Vite is a fast build tool for React. It starts the server quickly, reloads faster, and gives smaller builds than Create React App.
 
 
