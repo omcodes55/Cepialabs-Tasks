@@ -36,7 +36,7 @@ export function ClickButton() {
   return <button onClick={handleClick}>Click Me</button>;
 }
 
-// Extra assignment's strech task:
+// Extra assignment's strech task questions:
 
 // Q1. Why do we use React?
 // We use React to build fast and interactive user interfaces for web applications. It helps developers create reusable components, making code easier to maintain. React also uses a Virtual DOM, which updates only the necessary parts of a webpage, improving performance and user experience.
