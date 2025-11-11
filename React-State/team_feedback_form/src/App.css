@@ -1,4 +1,4 @@
-/* Global styling */
+
 body {
   font-family: "Poppins", sans-serif;
   background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
@@ -10,7 +10,6 @@ body {
   align-items: center;
 }
 
-/* App container */
 .app {
   text-align: center;
   background: rgba(255, 255, 255, 0.15);
@@ -22,7 +21,7 @@ body {
   max-width: 900px;
 }
 
-/* Heading */
+
 h1 {
   color: #fff;
   font-weight: 600;
@@ -31,7 +30,7 @@ h1 {
   margin-bottom: 40px;
 }
 
-/* Members container */
+
 .member-list {
   display: flex;
   flex-wrap: wrap;
@@ -39,7 +38,7 @@ h1 {
   gap: 25px;
 }
 
-/* Member card design */
+
 .member-card {
   background: rgba(255, 255, 255, 0.3);
   border-radius: 16px;
@@ -56,7 +55,7 @@ h1 {
   background: rgba(255, 255, 255, 0.45);
 }
 
-/* Feedback button */
+
 button {
   background: linear-gradient(135deg, #667eea, #764ba2);
   border: none;
@@ -74,7 +73,7 @@ button:hover {
   background: linear-gradient(135deg, #5a67d8, #6b46c1);
 }
 
-/* Reset button styling */
+
 .reset-btn {
   margin-top: 40px;
   font-size: 16px;

@@ -11,14 +11,14 @@ const App = () => {
     Array(teamMembers.length).fill(0)
   );
 
-  // Function to increase feedback for a specific member
+  
   const handleFeedback = (index) => {
     const newCounts = [...feedbackCounts];
     newCounts[index] += 1;
     setFeedbackCounts(newCounts);
   };
 
-  // Function to reset all feedback counts to 0
+  
   const resetAll = () => {
     setFeedbackCounts(Array(teamMembers.length).fill(0));
   };
