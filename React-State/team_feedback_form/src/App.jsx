@@ -3,7 +3,7 @@ import MemberCard from "./MemberCard";
 import "./App.css";
 
 const App = () => {
-  // Team members list
+ 
   const teamMembers = ["Ram", "Suraj", "Jay", "Sweta"];
 
   // State to store feedback count for each member
