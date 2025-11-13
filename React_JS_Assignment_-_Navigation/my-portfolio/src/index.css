@@ -1,0 +1,75 @@
+:root { --max-width: 900px; }
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  color: #111;
+  background: #fff;
+}
+
+/* Layout container */
+.container {
+  max-width: var(--max-width);
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+nav a {
+  margin-left: 12px;
+  text-decoration: none;
+  color: #000;
+}
+
+nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Main */
+main {
+  padding: 18px 0;
+}
+
+/* Simple card */
+.card {
+  border: 1px solid #ddd;
+  padding: 12px;
+  margin-bottom: 14px;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid #ddd;
+  padding: 16px 0;
+  text-align: center;
+  margin-top: 20px;
+  color: #666;
+}
+
+/* Form styling */
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+  border: 1px solid #bbb;
+  font-family: inherit;
+}
+
+button {
+  padding: 8px 12px;
+  margin-top: 10px;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #111;
+}
