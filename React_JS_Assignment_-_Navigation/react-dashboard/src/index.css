@@ -1,0 +1,76 @@
+body {
+font-size: 15px;
+color: #333;
+font-weight: 500;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+
+nav a:hover {
+color: #0077ff;
+}
+
+
+nav a[aria-current='page'] {
+font-weight: 700;
+color: #0077ff;
+}
+
+
+/* Buttons */
+button {
+background: #0077ff;
+border: none;
+color: white;
+padding: 10px 16px;
+border-radius: 8px;
+cursor: pointer;
+font-size: 15px;
+transition: 0.2s;
+
+}
+
+
+
+button:hover {
+background: #005fcc;
+}
+
+
+/* Inputs */
+input {
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 8px;
+width: 100%;
+font-size: 15px;
+}
+
+
+form {
+display: flex;
+flex-direction: column;
+gap: 14px;
+max-width: 300px;
+}
+
+
+/* User List */
+ul {
+padding-left: 18px;
+}
+
+
+li {
+margin-bottom: 6px;
+font-size: 15px;
+}
+
+
+body { font-family: Inter, Arial, sans-serif; margin: 0; padding: 0 }
+a { text-decoration: none }
+nav a[aria-current='page'], nav a.active { font-weight: 700 }
+button { cursor: pointer }
