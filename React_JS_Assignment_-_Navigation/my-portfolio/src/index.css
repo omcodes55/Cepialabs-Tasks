@@ -171,32 +171,57 @@ h2 { margin-top: 0; font-size: 22px; letter-spacing: 0.01em; }
 .btn.primary:hover { background: var(--accent-soft); transform: translateY(-1px); }
 
 /* PROJECTS ---------------------------------------------------------------*/
-.section-intro { font-size: 14px; color: var(--text-muted); margin-bottom: 8px; }
-.projects-grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); }
+.section-intro {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
 
+/* Mobile-first: 1 column */
+.projects-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr;
+}
 
+/* Tablet & up: 2 columns */
+@media (min-width: 720px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
 
 .card {
   border: 1px solid var(--border-subtle);
   border-radius: 10px;
-  padding: 12px 15px;
+  padding: 14px 16px;
   background: var(--bg-card);
 }
 
-.project-desc { font-size: 13px; color: var(--text-muted); }
-.tag, .badge { font-size: 11px; padding: 3px 8px; border-radius: 999px; }
-.badge { background: var(--badge-bg); color: var(--badge-text); }
-.tag { background: var(--tag-bg); color: var(--tag-text); }
-
-/* GitHub Button */
-.github-btn {
-  display: inline-flex; gap: 6px; align-items: center;
-  background: var(--accent);
-  color: white; padding: 6px 12px; border-radius: 999px;
-  text-decoration: none; margin-top: 8px; margin-bottom: 12px;
-  transition: 0.15s ease;
+/* Optional: thodi gap stack tags ma pan */
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
-.github-btn:hover { background: var(--accent-soft); transform: translateY(-2px); }
+
+.tag,
+.badge {
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 999px;
+}
+
+.badge {
+  background: var(--badge-bg);
+  color: var(--badge-text);
+}
+
+.tag {
+  background: var(--tag-bg);
+  color: var(--tag-text);
+}
+
 
 /* CONTACT ---------------------------------------------------------------*/
 .contact-layout { display: grid; gap: 18px; margin-top: 12px; }
