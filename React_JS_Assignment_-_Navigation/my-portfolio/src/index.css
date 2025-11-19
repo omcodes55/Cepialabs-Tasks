@@ -242,16 +242,19 @@ h2 { margin-top: 0; font-size: 22px; letter-spacing: 0.01em; }
   font-size: 11px;
   padding: 3px 8px;
   border-radius: 999px;
+  
 }
 
 .badge {
   background: var(--badge-bg);
   color: var(--badge-text);
+  padding: 1px 10px;
 }
 
 .tag {
   background: var(--tag-bg);
   color: var(--tag-text);
+  padding: 5px 10px;
 }
 
 
