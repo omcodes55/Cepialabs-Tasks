@@ -1,30 +1,50 @@
+// src/components/Layout.jsx
 import React from "react";
 import { NavLink, Outlet } from "react-router-dom";
 
-const activeStyle = { fontWeight: 700, textDecoration: "underline" };
-
 export default function Layout() {
   return (
-    <div className="container">
-      <header>
-        <div>
-          <h1 style={{ margin: 0 }}>Om Vadher</h1>
-          <div style={{ fontSize: 12, color: "#666" }}>B.Tech CSE Student</div>
+    <div className="app-shell">
+      <header className="site-header">
+        <div className="brand">
+          
+          <div>
+            <h1 className="brand-title">Portfolio</h1>
+            <p className="brand-tagline">B.Tech CSE • Web Developer</p>
+          </div>
         </div>
 
-        <nav>
-          <NavLink to="/" end className={({ isActive }) => (isActive ? "active" : "")}>Home</NavLink>
-          <NavLink to="/projects" className={({ isActive }) => (isActive ? "active" : "")}>Projects</NavLink>
-          <NavLink to="/contact" className={({ isActive }) => (isActive ? "active" : "")}>Contact</NavLink>
+        <nav className="site-nav">
+          <NavLink
+            to="/"
+            end
+            className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="/projects"
+            className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
+          >
+            Projects
+          </NavLink>
+          <NavLink
+            to="/contact"
+            className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
+          >
+            Contact
+          </NavLink>
         </nav>
       </header>
 
-      <main>
-        <Outlet />
+      <main className="site-main">
+        <div className="container">
+          <Outlet />
+        </div>
       </main>
 
-      <footer>
-        © {new Date().getFullYear()} Vadher Om — Built with React Router
+      <footer className="site-footer">
+        © {new Date().getFullYear()} Om Vadher • Built with React Router
       </footer>
     </div>
   );
