@@ -16,7 +16,7 @@ export default function Projects() {
       title: "Movie Recommendation System",
       desc: "Recommends movies using ML similarity and viewing history.",
       stack: ["Python", "Machine Learning"],
-      status: "Academic Project",
+      status: "Personal Project",
       github: "https://github.com/omcodes55/Movies-Recommdation-System_Project",
     },
     {
