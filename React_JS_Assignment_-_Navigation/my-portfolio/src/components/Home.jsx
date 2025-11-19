@@ -11,7 +11,7 @@ export default function Home() {
       <img src={profileImg} alt="Profile" className="profile-img" />
 
       <p className="hero-eyebrow">👋 Hi, I’m</p>
-      <h2 className="hero-title">Om Vadher</h2>
+      <h2 className="hero-title">OM VADHER</h2>
 
       <p className="hero-subtitle">
         A dedicated Computer Science student focused on developing

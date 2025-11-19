@@ -64,7 +64,7 @@ export default function Contact() {
           <div className="field">
             <label>
               Phone
-              <input name="phone" type="tel" placeholder="+91 74869 28889" />
+              <input name="phone" type="tel"  />
             </label>
           </div>
 

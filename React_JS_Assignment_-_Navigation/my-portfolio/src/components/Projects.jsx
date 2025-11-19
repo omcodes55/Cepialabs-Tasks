@@ -39,7 +39,7 @@ export default function Projects() {
 
   return (
     <section>
-      <h2>Projects</h2>
+      <h2 className="section-title"> Projects</h2>
       <p className="section-intro">
         Here are some of my recent projects. I keep learning and building every day 🚀
       </p>
