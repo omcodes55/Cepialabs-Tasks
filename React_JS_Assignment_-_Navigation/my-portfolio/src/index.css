@@ -170,27 +170,28 @@ h2 { margin-top: 0; font-size: 22px; letter-spacing: 0.01em; }
 .btn.primary { background: var(--accent); color: #fff; gap: 2px;}
 .btn.primary:hover { background: var(--accent-soft); transform: translateY(-1px); }
 
-/* PROJECTS ---------------------------------------------------------------*/
+/* ================== PROJECTS ================== */
+
 .section-intro {
   font-size: 14px;
   color: var(--text-muted);
   margin-bottom: 8px;
 }
 
-/* Mobile-first: 1 column */
+/* Grid layout */
 .projects-grid {
   display: grid;
   gap: 16px;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr; /* mobile: 1 column */
 }
 
-/* Tablet & up: 2 columns */
 @media (min-width: 720px) {
   .projects-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* tablet+ : 2 columns */
   }
 }
 
+/* Project card */
 .card {
   border: 1px solid var(--border-subtle);
   border-radius: 10px;
@@ -198,7 +199,38 @@ h2 { margin-top: 0; font-size: 22px; letter-spacing: 0.01em; }
   background: var(--bg-card);
 }
 
-/* Optional: thodi gap stack tags ma pan */
+/* "View Code" button */
+.github-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: #f9fafb;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none; /* no underline */
+  box-shadow: 0 8px 18px rgba(79, 70, 229, 0.45);
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background 0.15s ease;
+}
+
+.github-btn:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  box-shadow: 0 10px 22px rgba(79, 70, 229, 0.6);
+}
+
+.github-icon {
+  font-size: 16px;
+  line-height: 1;
+}
+
+/* Tech stack tags */
 .stack {
   display: flex;
   flex-wrap: wrap;
@@ -221,6 +253,7 @@ h2 { margin-top: 0; font-size: 22px; letter-spacing: 0.01em; }
   background: var(--tag-bg);
   color: var(--tag-text);
 }
+
 
 
 /* CONTACT ---------------------------------------------------------------*/
