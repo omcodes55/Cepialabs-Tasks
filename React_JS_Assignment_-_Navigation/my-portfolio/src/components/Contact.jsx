@@ -92,7 +92,7 @@ export default function Contact() {
           </p>
           <p className="contact-note">
             I usually reply within 1–2 days.  
-            Feel free to connect for internships, collaborations, or tech discussions.
+            Thank You for reaching out.
           </p>
         </div>
       </div>

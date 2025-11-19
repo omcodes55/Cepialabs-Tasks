@@ -165,8 +165,9 @@ h2 { margin-top: 0; font-size: 22px; letter-spacing: 0.01em; }
   border: 1px solid var(--accent); font-size: 14px;
   display: inline-flex; gap: 6px; align-items: center; cursor: pointer;
   text-decoration: none; transition: 0.15s ease;
+  
 }
-.btn.primary { background: var(--accent); color: #fff; }
+.btn.primary { background: var(--accent); color: #fff; gap: 2px;}
 .btn.primary:hover { background: var(--accent-soft); transform: translateY(-1px); }
 
 /* PROJECTS ---------------------------------------------------------------*/

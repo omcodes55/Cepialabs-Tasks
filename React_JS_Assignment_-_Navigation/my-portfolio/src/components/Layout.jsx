@@ -8,8 +8,8 @@ export default function Layout() {
       <header className="site-header">
         <div className="brand">
           <div>
-            <h1 className="brand-title">Portfolio</h1>
-            <p className="brand-tagline">B.Tech CSE • Web Developer</p>
+            <h1 className="brand-title">OM VADHER - Web Developer</h1>
+            <p className="brand-tagline">B.Tech in Computer Science & Engineering  •  Parul University </p>
           </div>
         </div>
 
