@@ -1,0 +1,61 @@
+1. What is Next.js?
+Ans --> Next.js is a powerful framework built on top of React. It helps to create fast, SEO-friendly web applications. It supports server-side rendering, static site generation, API routes and file-based routing. It makes web development easier and more professional.
+
+
+2. Difference between React and Next.js
+Ans --> React is a JavaScript library, while Next.js is a complete framework built on top of React.
+        In React, we need to use packages like react-router for routing, but in Next.js, routing is automatic using the file structure.
+
+        React supports only Client-Side Rendering (CSR), whereas Next.js supports CSR, SSR (Server-Side Rendering), and SSG (Static Site Generation).
+        Because of SSR and SSG, websites made with Next.js are more SEO friendly.
+
+        Also, in React we need a separate backend, but Next.js provides API Routes, so we can create backend APIs inside Next.js itself.
+        Overall, React is good for UI development, but Next.js is better for complete web application development.
+        
+
+3. What is Server-Side Rendering (SSR)?
+Ans --> In SSR, the page is first rendered on the server, then it is sent to the browser. So the content loads faster and SEO becomes better. In Next.js, SSR is done using getServerSideProps().
+
+
+4. What is Client-Side Rendering (CSR)?
+Ans --> In CSR, the browser loads an empty HTML page first and then fills the content using JavaScript. It is fast after loading but not great for SEO because search engines cannot see the content properly.
+
+
+5. How does routing work in Next.js?
+Ans --> Next.js uses file-based routing. That means every file inside the pages/ or app/ folder automatically becomes a route.
+
+
+6. What is a dynamic route?
+Ans --> A route that changes based on data like ID or username.
+        Next.js creates it using square brackets.
+
+        Example:
+        pages/products/[id].js → /products/10, /products/20, etc.
+
+
+7. What are API Routes in Next.js?
+Ans --> Using API routes, we can create a backend inside Next.js itself. These files are written inside pages/api/. It is used to create APIs like GET, POST etc.
+        Example: pages/api/user.js → /api/user
+
+
+8. What is getStaticProps used for?
+Ans --> It is used for Static Site Generation (SSG).
+        This function runs at build time, fetches data and creates a ready HTML page. It improves speed and SEO.
+
+
+9. What is the purpose of the app directory in Next.js?
+Ans --> From Next.js 13, the app/ directory is introduced. It is mainly used for:
+
+        - Layouts
+        - Nested routing
+        - Server components
+        - Better data fetching
+        It is the modern replacement of the pages folder.
+
+10. What is the use of the Image component in Next.js?
+Ans --> next/image component is used to optimize images. It gives:
+        - Lazy loading
+        - Automatic resizing
+        - Faster performance
+        - Better SEO
+        Example: <Image src="/logo.png" width={200} height={200} alt="Logo" />
