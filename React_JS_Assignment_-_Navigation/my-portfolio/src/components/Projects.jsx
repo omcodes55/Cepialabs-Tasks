@@ -9,7 +9,7 @@ export default function Projects() {
       desc: "A simple UI to track LeetCode progress and problem stats.",
       stack: ["HTML", "CSS", "JavaScript"],
       status: "Personal Project",
-      github: "https://github.com/omcodes55/-LeetStat-A-LeetCode-Stats-Tracker-",
+      github: "https://github.com/omcodes55/LeetStat-LeetCodeTracker",
     },
     {
       id: 2,
